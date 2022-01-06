@@ -31,4 +31,21 @@ export class BoardComponent implements OnInit {
       return isRowEven ? isFieldEven : !isFieldEven;
     }
 
+    onFiledClick(field : piaceData){
+      this.clearAllFocus();
+      if(!field?.type){
+        console.log("empty clicked")
+        return;
+      }
+      this.setFocus(field)
+        console.log("clicked" , field.type , field.position , field.color)
+    }
+
+    setFocus(field : piaceData){
+
+    }
+
+    clearAllFocus(){
+
+    }
 }

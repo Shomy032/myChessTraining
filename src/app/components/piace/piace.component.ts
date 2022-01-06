@@ -19,5 +19,5 @@ export class PiaceComponent implements OnInit {
   move(){
 
   }
-
+  
 }
