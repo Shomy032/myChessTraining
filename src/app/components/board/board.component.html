@@ -1,0 +1,40 @@
+
+<div class="core-wraper">
+
+    <div class="big-border" >
+       
+        <div class="board-wraper small-border" >
+
+            <div class="single-row" *ngFor="let row of boardData; let ind = index">
+                <div class="single-field"
+                 *ngFor="let field of row; let i = index"
+                 [ngClass]="{
+                     'even-color' : isEvenField(i , ind) ,
+                     'odd-color' : !isEvenField(i , ind) 
+                    }"
+                 >
+                    
+                    <div 
+                    *ngIf="field?.type"
+                     >
+
+                     <app-piace
+                     [type]="field.type"
+                     [position]="field.position"
+                     [color]="field.color"
+                     > 
+                     </app-piace>
+                      
+                    </div>
+            
+                </div>
+            </div>
+
+        </div>
+        
+    
+    </div>
+
+</div>
+
+
