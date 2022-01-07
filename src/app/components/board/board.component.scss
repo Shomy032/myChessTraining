@@ -61,3 +61,10 @@ background-color: $even-field-color;
     border: 10px solid $odd-field-color;
 }
 
+.field-focused {
+    opacity: 0.5;
+}
+
+.possible-move-field {
+    opacity: 0.2;
+}

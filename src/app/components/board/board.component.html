@@ -10,7 +10,9 @@
                  *ngFor="let field of row; let i = index"
                  [ngClass]="{
                      'even-color' : isEvenField(i , ind) ,
-                     'odd-color' : !isEvenField(i , ind) 
+                     'odd-color' : !isEvenField(i , ind) ,
+                     'field-focused' : isFieldFocused(field) ,
+                     'possible-move-field' : isFieldPossibleMove(field)
                     }"
                     (click)="onFiledClick(field)"
                  >
