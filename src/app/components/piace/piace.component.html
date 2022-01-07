@@ -1,3 +1,12 @@
-<p>{{ type }}</p>
+<!-- <p>{{ type }}</p>
 <p>{{ position }}</p>
-<p>{{ color }}</p>
+<p>{{ color }}</p> -->
+
+<div
+class="piece-picture-wraper"
+*ngIf="type"
+>
+
+   <img class="piece-picture" [src]="getIconPath(type)" alt="piece picture">
+
+</div>
