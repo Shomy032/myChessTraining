@@ -7,6 +7,7 @@ class="piece-picture-wraper"
 *ngIf="type"
 >
 
-   <img class="piece-picture" [src]="getIconPath(type)" alt="piece picture">
+   <img class="piece-picture"
+    [src]="'assets/' + color + '-' + type + '.png'" alt="piece-picture">
 
 </div>

@@ -16,10 +16,4 @@ export class PiaceComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  
-  getIconPath(type : string) : string {
-    return "../../../assets/" + this.color + "-" + this.type + ".png";
-  }
-
-
 }
