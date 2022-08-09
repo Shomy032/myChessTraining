@@ -2,12 +2,9 @@
 <p>{{ position }}</p>
 <p>{{ color }}</p> -->
 
-<div
-class="piece-picture-wraper"
-*ngIf="type"
->
-
-   <img class="piece-picture"
-    [src]="'assets/' + color + '-' + type + '.png'" alt="piece-picture">
-
+<div class="piece-picture-wraper" *ngIf="type">
+  <img
+    class="piece-picture"
+    [src]="'assets/' + color + '-' + type + '.png'"
+    alt="piece-picture" />
 </div>

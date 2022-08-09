@@ -2,69 +2,66 @@ $even-field-color: rgb(105, 25, 25);
 $odd-field-color: rgb(247, 220, 179);
 
 .core-wraper {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.board-wraper{
-    width: 800px;
-    height: 800px;
-    overflow: hidden;
+.board-wraper {
+  width: 800px;
+  height: 800px;
+  overflow: hidden;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.single-row{
-    width: 800px;
-    height: 100px;
+.single-row {
+  width: 800px;
+  height: 100px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
-.single-field{
-    width: 100px;
-    height: 100px;
+.single-field {
+  width: 100px;
+  height: 100px;
 }
-
 
 .even-color {
-background-color: $even-field-color;
+  background-color: $even-field-color;
 }
 
 .odd-color {
   background-color: $odd-field-color;
 }
 
-.big-border{
-    border: 40px solid $even-field-color;
+.big-border {
+  border: 40px solid $even-field-color;
 }
 
 .small-border {
-    border: 10px solid $odd-field-color;
+  border: 10px solid $odd-field-color;
 }
 
 .field-focused {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .possible-move-field {
-    opacity: 0.2;
+  opacity: 0.2;
 }
